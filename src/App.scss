@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:ital,wght@0,100;0,200;0,300;1,100;1,200;1,300&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Poppins, system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+
+$bgcolor: #f2f2f2;
+$gray: #fafafa;
+$color: #333;
+$textcolor: #f1356d;
+$hover: #f1356d;
+$fontsize: 18px;
+
+button {
+  width: 120px;
+  height: 40px;
+  border: none;
+  background-color: $textcolor;
+  cursor: pointer;
+  padding: 5px 10px;
+  font-size: 1rem;
+  color: $bgcolor;
+  border-radius: 10px;
+  transition: ease 0.5s;
+}
+
+button:hover {
+  background-color: #333;
+}
+
+.navbar {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  max-width: 600px;
+  margin: 0 auto;
+  border-bottom: 1px solid #f2f2f2;
+}
+
+.navbar h2 {
+  color: $textcolor;
+}
+.navbar .links {
+  margin-left: auto;
+}
+
+.navbar a {
+  margin-left: 16px;
+  text-decoration: none;
+  padding: 6px;
+}
+
+.navbar a:hover {
+  color: $hover;
+}
+
+.content {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+.blog-preview {
+  padding: 10px 16px;
+  margin: 20px 0;
+  cursor: pointer;
+}
+.blog-preview a {
+  text-decoration: none;
+}
+
+.blog-preview:hover {
+  box-shadow: 1px 3px 5px rgba($color: #000000, $alpha: 0.1);
+}
+
+.blog-preview h2 {
+  color: $textcolor;
+  margin-bottom: 8px;
+}
+
+.blog-details h2 {
+  font-size: 20px;
+  color: $textcolor;
+  margin-bottom: 10px;
+}
+
+.blog-details div {
+  margin: 20px 0;
+}
+
+.create {
+  max-width: 400px;
+  margin: 0 auto;
+  text-align: center;
+}
+.create label {
+  text-align: left;
+  display: block;
+}
+.create h2 {
+  font-size: 20px;
+  color: #f1356d;
+  margin-bottom: 30px;
+}
+.create input,
+.create textarea,
+.create select {
+  width: 100%;
+  padding: 6px 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+  display: block;
+}
+.create button {
+  background: #f1356d;
+  color: #fff;
+  border: 0;
+  padding: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+}
